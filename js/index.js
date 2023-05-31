@@ -32,18 +32,30 @@ window.addEventListener('DOMContentLoaded', () => {
     {
       q: 'Which is the third planet from the sun?',
       o: ['Saturn', 'Earth', 'Pluto', 'Mars'],
-      a: 1, // array index 1 - so Earth is the correct answer here
+      a: 2, // array index 1 - so Earth is the correct answer here
     },
     {
       q: 'Which is the largest ocean on Earth?',
       o: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
-      a: 3,
+      a: 4, // array index 1 - so Pacific ocean is the correct answer here
     },
     {
       q: 'What is the capital of Australia',
       o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
-      a: 1,
+      a: 2, // array index 1 - so Canberra is the correct answer here
     },
+    {  
+      q: 'What is the best place in the world',
+      o: ['Australia', 'America', 'China', 'England'],
+      a: 1, // array index 1 - so Australia is the correct answer here
+    },
+    {
+      q: 'How many states are in australia',
+      o: ['2', '4', '7', '6'],
+      a: 4,  // array index 1 - so 6 states is the correct answer here
+    },
+
+      
   ];
 
   // function to Display the quiz questions and answers from the object
@@ -88,3 +100,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // call the displayQuiz function
   displayQuiz();
 });
+// define the button actions here:
+
+document.querySelectorAll("button").forEach(btn=>btn.onclick=ev=>console.log(`Hey, you have clicked the ${btn.textContent} button!}`));
